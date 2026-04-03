@@ -1,8 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'constants.dart';
-import 'model.dart';
+import 'constants/constants.dart';
+import 'model/model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -157,7 +157,7 @@ class _ChatPageState extends State<ChatPage> {
                 style: const TextStyle(color: Colors.white),
                 onSubmitted: (value) => sendMessage(),
                 decoration: const InputDecoration(
-                  hintText: "Type your message...",
+                  hintText: "Ask Ai chatbot....",
                   hintStyle: TextStyle(color: Colors.white38),
                   border: InputBorder.none,
                 ),
